@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Tank_fw" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="sheep/Network/;" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Tank01" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-g" />
+					<Add directory="/usr/local/SFML-2.2/include" />
+					<Add directory="sheep_h/Network" />
+					<Add directory="sheep_h/World" />
+					<Add directory="sheep/World" />
+					<Add directory="/home/suuunly/Desktop/NetworkingTankGame/Tank_fw/sheep/World" />
+					<Add directory="sheep/Render" />
+					<Add directory="sheep/Network" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="lib" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="-Wl,-rpath lib" />
+					<Add option="-Wl,-rpath-link lib" />
+					<Add library="sfml-graphics" />
+					<Add library="sfml-window" />
+					<Add library="sfml-system" />
+					<Add directory="/usr/local/SFML-2.2/lib" />
+					<Add directory="lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Tank01" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-std=c++11" />
+					<Add directory="sheep_h/Network" />
+					<Add directory="sheep_h/World" />
+					<Add directory="sheep/World" />
+					<Add directory="/home/suuunly/Desktop/NetworkingTankGame/Tank_fw/sheep/World" />
+					<Add directory="sheep/Render" />
+					<Add directory="sheep/Network" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-std=c++11" />
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="Utils.cpp" />
+		<Unit filename="Utils.hpp" />
+		<Unit filename="main.cpp" />
+		<Unit filename="sheep/Network/SheepGameNetwork.cpp" />
+		<Unit filename="sheep/Network/SheepGameNetwork.h" />
+		<Unit filename="sheep/Network/SheepMessageBuffer.cpp" />
+		<Unit filename="sheep/Network/SheepMessageBuffer.h" />
+		<Unit filename="sheep/Network/SheepMessageParser.cpp" />
+		<Unit filename="sheep/Network/SheepMessageParser.h" />
+		<Unit filename="sheep/Network/SheepNetTCP.cpp" />
+		<Unit filename="sheep/Network/SheepNetTCP.h" />
+		<Unit filename="sheep/Network/SheepNetUDP.cpp" />
+		<Unit filename="sheep/Network/SheepNetUDP.h" />
+		<Unit filename="sheep/Network/SheepNetUDPBroadcast.cpp" />
+		<Unit filename="sheep/Network/SheepNetUDPBroadcast.h" />
+		<Unit filename="sheep/Network/SheepNetwork.cpp" />
+		<Unit filename="sheep/Network/SheepNetwork.h" />
+		<Unit filename="sheep/Render/SheepView.cpp" />
+		<Unit filename="sheep/Render/SheepView.h" />
+		<Unit filename="sheep/World/SheepAmmo.cpp" />
+		<Unit filename="sheep/World/SheepAmmo.h" />
+		<Unit filename="sheep/World/SheepObject.cpp" />
+		<Unit filename="sheep/World/SheepObject.h" />
+		<Unit filename="sheep/World/SheepObjectEnemy.cpp" />
+		<Unit filename="sheep/World/SheepObjectEnemy.h" />
+		<Unit filename="sheep/World/SheepObjectPlayer.cpp" />
+		<Unit filename="sheep/World/SheepObjectPlayer.h" />
+		<Unit filename="sheep/World/SheepObjectProjectile.cpp" />
+		<Unit filename="sheep/World/SheepObjectProjectile.h" />
+		<Unit filename="sheep/World/SheepTag.h" />
+		<Unit filename="sheep/World/SheepWorld.cpp" />
+		<Unit filename="sheep/World/SheepWorld.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
